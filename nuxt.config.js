@@ -76,13 +76,13 @@ export default {
 
   strapi: {
     entities: ['data'],
-    url: process.env.strapiBaseUri || 'http://localhost:1337'
+    url: process.env.strapiBaseUri || 'http://localhost:1337' || 'https://miloworld-backend.herokuapp.com/'
   },
 
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || 'http://localhost:1337/graphql'
+        httpEndpoint: process.env.BACKEND_URL || 'http://localhost:1337/graphql' || 'https://miloworld-backend.herokuapp.com/graphql'
       }
     }
   },
@@ -100,7 +100,7 @@ export default {
   },
 
   env: {
-    strapiBaseUri: process.env.API_URL || 'http://localhost:1337'
+    strapiBaseUri: process.env.API_URL || 'http://localhost:1337' || 'https://miloworld-backend.herokuapp.com/'
   },
 
   ssr: true,
