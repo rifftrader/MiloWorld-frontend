@@ -31,20 +31,13 @@ The original concept was to simply build up a Nuxt frontend and then get it to f
   * I lifted the specs of various Siemens PLC cards and used this as dummy data, mainly because it was very nicely organised and readily available.
   * I built up a relational database, broadly arranged in the following manner:
 
-** CATEGORIES
-**
-
-** |**
-
-** TYPES**
-
-** |**
-
-** PRODUCT FAMILIES**
-
-** |**
-
-** PRODUCTS ———————————— ACCESSORIES**
+ CATEGORIES
+ |
+ TYPES
+ |
+ PRODUCT FAMILIES
+ |
+ PRODUCTS ———————————— ACCESSORIES
 
   * This arrangement made it easier to mimic these relationships on the UI - for instance, if you click on a product, it’ll tell you what the compatible accessories are and vice versa.
   * Being the first database I have ever made, I’d have to say that it was a pretty decent attempt; however, there have also been a lot of lessons learned.
