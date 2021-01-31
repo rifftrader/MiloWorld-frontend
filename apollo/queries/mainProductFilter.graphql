@@ -1,0 +1,39 @@
+query ($searchCategory: [String!]!, $searchTypeName: [String!]!, $searchProductFamilyName: [String!]!) {
+  getFields: categories {
+    categoryName
+    types {
+      typeName
+      product_families {
+        productFamilyName
+      }
+    }
+  }
+  getProducts: products
+  (
+    where: {
+      category: {
+        categoryName_contains: $searchCategory
+      },
+      type: {
+        typeName_contains: $searchTypeName
+      }
+      product_families: {
+        productFamilyName_contains: $searchProductFamilyName
+      },
+    },
+  )
+  {
+    articleNumber
+    shortName
+    category {
+      categoryName
+    }
+    type {
+      typeName
+    }
+    product_families {
+      productFamilyName
+    }
+  }
+}
+

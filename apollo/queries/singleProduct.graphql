@@ -1,0 +1,41 @@
+query ($searchCriteria: String!){
+  products (where: {articleNumber: $searchCriteria}) {
+    articleNumber
+    shortName
+    description
+    product_families {
+      productFamilyName
+      type {
+        typeName
+      }
+    }
+    accessories {
+      articleNumber
+      shortName
+    }
+    netWeight
+    packagingQuantity
+  }
+}
+
+#'6ES7314-1AG14-0AB0'
+
+#query {
+#  products (where: {articleNumber:"6ES7314-1AG14-0AB0"}) {
+#    articleNumber
+#    shortName
+#    description
+#    product_families {
+#      productFamilyName
+#      type {
+#        typeName
+#      }
+#    }
+#    accessories {
+#      articleNumber
+#      shortName
+#    }
+#    netWeight
+#    packagingQuantity
+#  }
+#}

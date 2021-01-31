@@ -1,0 +1,11 @@
+query ($searchCriteria: String!){
+  accessories (where: {articleNumber: $searchCriteria}){
+    articleNumber
+    products {
+      articleNumber
+      shortName
+    }
+  }
+}
+
+

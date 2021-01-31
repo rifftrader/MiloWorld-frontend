@@ -1,0 +1,22 @@
+query ($searchCriteria: String!){
+  productFamilies (where: {productFamilyName: $searchCriteria}){
+    productFamilyName
+    products{
+      shortName
+      articleNumber
+    }
+    type{
+      typeName
+      typeDescription
+    }
+  }
+}
+#query {
+#  productFamilies (where: {productFamilyName_contains: "CPU 315F-2 DP"}){
+#    productFamilyName
+#    products{
+#      shortName
+#      articleNumber
+#    }
+#  }
+#}

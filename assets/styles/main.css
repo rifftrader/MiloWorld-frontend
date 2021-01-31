@@ -1,0 +1,173 @@
+/*----------------*/
+/*HTML AND "NORMAL" CLASS STYLING*/
+/*----------------*/
+
+html {
+  font-family: 'NTR', sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.page-content {
+  margin: 16px;
+  min-height: 90vh;
+}
+
+.content-positioning {
+  padding: 0 15%;
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content-positioning {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.page-header {
+  color: #039c81;
+}
+
+
+/*----------------*/
+/*IMAGE HANDLING*/
+/*----------------*/
+
+
+.reflow-prevention {
+  width: 100%;
+  /*padding-bottom: 44%;*/
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+
+/*----------------*/
+/*PAGE TRANSITIONS*/
+/*----------------*/
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+/*DOM TRANSITIONS*/
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.5s;
+}
+.slide-fade-enter,
+.slide-fade-leave-active {
+  opacity: 0;
+}
+.slide-fade-enter {
+  transform: translateX(31px);
+}
+.slide-fade-leave-active {
+  transform: translateX(-31px);
+}
+
+/*----------------*/
+/*LINK ANIMATIONS*/
+/*----------------*/
+
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*----------------*/
+/*PRODUCT THUMBNAILS*/
+/*----------------*/
+
+.item-thumbnail {
+  margin: 10px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+
+}
+.item-thumbnail:hover, .item-thumbnail:focus, .item-thumbnail:active {
+  text-decoration: none;
+  border: #039c81 solid 1px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+@media only screen and (max-width: 576px) {
+  .item-thumbnail {
+    margin-left: 0;
+  }
+}
+
+
+/*----------------*/
+/*LOADING CIRCLE*/
+/*----------------*/
+
+.center-loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #039c81; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 30px auto;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*----------------*/
+/*CHECKBOX STYLING
+/*----------------*/
+
+

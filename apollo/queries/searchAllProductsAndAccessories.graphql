@@ -1,0 +1,46 @@
+query ($searchTerms: [String!]!){
+  getProductsByArticleNumber: products
+  (
+    where: {
+      articleNumber_contains: $searchTerms
+    }
+  )
+  {
+    articleNumber
+    shortName
+    description
+  }
+  getProductsByDescription: products
+  (
+    where: {
+      description_contains: $searchTerms
+    }
+  )
+  {
+    articleNumber
+    shortName
+    description
+  }
+  getAccessoriesByArticleNumber: accessories
+  (
+    where: {
+      articleNumber: $searchTerms
+    }
+  )
+  {
+    articleNumber
+    shortName
+    description
+  }
+  getAccessoriesByDescription: accessories
+  (
+    where: {
+      description_contains: $searchTerms
+    }
+  )
+  {
+    articleNumber
+    shortName
+    description
+  }
+}
