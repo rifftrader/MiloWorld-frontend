@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-sm text-center" />
         <div class="col-sm text-center hvr-grow font-weight-bold">
-          <span><a href="https://github.com/rifftrader/MiloWorld-frontend"><i class="fab fa-github" /> Click here to view source code and project notes </a><i class="fas fa-external-link-square-alt" /></span>
+          <span><a href="https://github.com/rifftrader/MiloWorld-frontend"><i class="fab fa-github" /> Click here to view source code and project notes </a></span>
         </div>
         <div class="col-sm text-center" />
       </div>
