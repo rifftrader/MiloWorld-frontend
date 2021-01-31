@@ -44,13 +44,11 @@ The original concept was to simply build up a Nuxt frontend and then get it to f
 
 * Aside from a couple of placeholders, whenever you are viewing a product/accessory on the frontend, all the data is dynamically served up from the backend. For instance, if you view a certain product, you will also be able to see information regarding that particular product’s “type” and “product family” served up. It is worth mentioning here that, in order to parse some of the long text, I used a Nuxt markdown package.
 
-**
-**
+
 
 **List of All Modules / Third Party Content Used**
 
-**
-**
+
 
 * @nuxtjs/apollo
 * @nuxtjs/cloudinary
